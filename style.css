@@ -27,6 +27,7 @@ body {
 
 main {
   max-width: 600px;
+  overflow-x: auto;
 }
 
 .tree {
@@ -77,3 +78,15 @@ p {
   color: var(--fg);
 }
 
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    font-size: 13px;
+  }
+  
+  .tree {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+}

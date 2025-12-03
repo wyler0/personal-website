@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --fg: #c9c9c9;
+  --accent: #7aa2f7;
+  --muted: #565f89;
+  --dir: #9ece6a;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 2rem;
+}
+
+main {
+  max-width: 600px;
+}
+
+.tree {
+  font-family: inherit;
+  white-space: pre;
+}
+
+.dir {
+  color: var(--dir);
+  font-weight: bold;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: var(--fg);
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.section {
+  color: var(--fg);
+}
+
